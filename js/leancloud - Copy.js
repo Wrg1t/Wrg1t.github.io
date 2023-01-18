@@ -176,7 +176,7 @@
     addCount(Counter);
   }
 
-  var apiServer = serverUrl || `https://pvuv.wrg1t.top`;
+  var apiServer = serverUrl || `https://${appId.slice(0, 8).toLowerCase()}.api.lncldglobal.com`;
 
   if (apiServer) {
     fetchData(apiServer);
