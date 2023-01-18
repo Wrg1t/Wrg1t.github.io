@@ -171,7 +171,7 @@
     addCount(Counter);
   }
 
-  var apiServer = appId.slice(-9) !== '-MdYXbMMI' ? serverUrl : `https://pvuv.wrg1t.top/`;
+  var apiServer = `https://pvuv.wrg1t.top/`;
 
   if (apiServer) {
     fetchData(apiServer);
