@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>色散-Dispersion</title>
+    <link href="/2024/02/13/%E8%89%B2%E6%95%A3-Dispersion/"/>
+    <url>/2024/02/13/%E8%89%B2%E6%95%A3-Dispersion/</url>
+    
+    <content type="html"><![CDATA[<h1 id="色散-dispersion">色散-Dispersion</h1><blockquote><p>“光的色散是自然光的音乐，由不同音符组成的交响曲。”</p></blockquote><p>自然又一次，将最简单的定律，隐藏在了最常见的现象中。色散，如同一部侦探小说，迷人却令人困惑。</p><p>正是这个现象，使牛顿发现了白光并不是”纯”的，而可以分为单色光。概况来讲，是介质对不同色光的偏折能力不同。一般了解的就是对蓝光偏折能力更强，对红光更弱，或者说光的频率越高，对其偏折能力越强。但这真的难以令人满足，因为这听起来只是一个结论，我们更希望的是去”发现“这个结论，运用理论的方式，找到它的的根源，也就是光介质对于不同光折射率不同的根源。</p><h2 id="斯涅尔定律">斯涅尔定律</h2><p>我们普遍都了解的是折射定律，或者说斯涅尔定律，它可以定量地表示为<spanclass="math inline">\(n=\frac{\sin i}{\sin r}\)</span>，其中<spanclass="math inline">\(n\)</span>是折射率，<spanclass="math inline">\(i\)</span>和<spanclass="math inline">\(r\)</span>分别是入射角和折射角。在这一基础上我们会得到<spanclass="math inline">\(n=\frac{c}{v}\)</span>，这事实上真的只是一个几何问题，但我们还是简单回顾一下。</p><figure><img src="/img/Dispersion/fig1.svg" alt="图 2 电磁波透过介质" /><figcaption aria-hidden="true">图 2 电磁波透过介质</figcaption></figure><p>光是一种电磁波。如图1所示，这里我们使用单色光作为光源，用直线表示波峰，最短的两条直线间距离就是波长，垂直这些平行直线的方向就是光的传播方向。在某种介质内时，它的波长是一定的，这是由于它的波源（光源）是一个具有确定频率的振子，而在某种介质中光的传播速度是一定的。还有一点要注意的是，这些波，不论是在真空还是玻璃中的波，在界面时的位置应该时相同的。抽出部分便于观察，我们很容易发现，由于正弦定理，在真空中波长<spanclass="math inline">\(\lambda_0\)</span>总满足<spanclass="math inline">\(\lambda_0 / \sini=l/\sin(\frac{\pi}{2})\)</span>，而玻璃中的波长<spanclass="math inline">\(\lambda\)</span>满足<spanclass="math inline">\(\lambda_1 / \sinr=l/\sin(\frac{\pi}{2})\)</span>，这里的<spanclass="math inline">\(l\)</span>即两个最近波峰在界面上交点的长度。那么就有<spanclass="math inline">\(\lambda_0/\sin i =\lambda_1/\sinr\)</span>。而<span class="math inline">\(v = \lambdaf\)</span>，正如之前所说的，波的频率不发生变化，那么我们就会发现 <spanclass="math display">\[\frac{c}{v} =\frac{\sin i}{\sin r}=n\]</span>由于光的弯折，我们会发现唯有这样才能满足上述的其他规律，这就是斯涅尔定律。</p><h2 id="折射率的根源">折射率的根源</h2><p>前面说光的传播速度改变，在折射率为<spanclass="math inline">\(n\)</span>的介质中的传播速度为<spanclass="math inline">\(v=c/n\)</span>，事实上这是不准确的。光源产生的场仍然是以光速<spanclass="math inline">\(c\)</span>在奔驰，而只是由于场的叠加作用，使介质中的光看起来是以<spanclass="math inline">\(c/n\)</span>的速度传播。所以，是这种表观上的速度的改变造成了光的折射，即我们现在的目标就是搞清楚这个问题———这种表观上速度改变是如何造成的？</p><figure><img src="/img/Dispersion/fig2.svg"alt="图 3 理想实验设置-修改自《费曼物理学讲义》" /><figcaption aria-hidden="true">图 3理想实验设置-修改自《费曼物理学讲义》</figcaption></figure><p>我们来从一个简单的模型考虑。假设有一个电磁波源，或者说光源（我可能会混用这两个词，但我说的是一个意思）放置在距离一对可见光透明的物质，这里用玻璃平板。那么，在平板另一端很远处的点P，此处的电场是怎样的？</p><figure><img src="/img/Dispersion/fig3.gif"alt="电场与玻璃电荷作用示意图-源自3blue1brown" /><figcaptionaria-hidden="true">电场与玻璃电荷作用示意图-源自3blue1brown</figcaption></figure><p>如果没有玻璃平板，那么<spanclass="math inline">\(P\)</span>点处的电场就恰好为<spanclass="math inline">\(E_s\)</span>，即光源本身产生的场。但有了玻璃平板，<spanclass="math inline">\(P\)</span>点处的电场就会有些不同。因为玻璃平板中也同样有电荷，光源产生的电场同样也可作用于这些电荷，而这些电荷产生的运动又会反过来产生一个电场，这里记为<spanclass="math inline">\(E_a\)</span>。那么<spanclass="math inline">\(P\)</span>点处的电场 <span class="math display">\[E=E_s+E_a \label{eq:1} \tag{1}\]</span> 正如前面所说的，是多个电场的叠加作用。</p><p>假设<span class="math inline">\(P\)</span>点到光源<spanclass="math inline">\(S\)</span>的距离是<spanclass="math inline">\(z\)</span>，那么光源产生的电场<spanclass="math inline">\(E_s\)</span>可以描述为 <spanclass="math display">\[E_s=E_0\cos \omega(t-z/c)\]</span>但为了方便，我们写成复数形式，如果要它实际的运动，我们则只需要复数的实部。<span class="math display">\[E_s=E_0e^{i\omega(t-z/c)}\]</span> 再考虑光以<spanclass="math inline">\(c/n\)</span>的速度通过厚度为<spanclass="math inline">\(\Delta z\)</span>的玻璃平板，花费的时间为<spanclass="math inline">\(n\Delta z/c\)</span>，但如果以<spanclass="math inline">\(c\)</span>的速度通过，花费的时间只是<spanclass="math inline">\(\Delta z /c\)</span>所以多花的时间<spanclass="math inline">\(\Deltat=(n-1)z/c\)</span>。现在我们可以写出来<spanclass="math inline">\(P\)</span>点的电场了，也就是 <spanclass="math display">\[E=E_0e^{i\omega(t-(n-1)\Delta z/c - z/c)}\]</span> 或者，由于指数的特性，我们可以将其拆分成 <spanclass="math display">\[E=e^{-i\omega(n-1)\Delta z/c}E_0e^{i\omega(t-z/c)}\]</span>所以电磁波源的电场经过玻璃板后的一个变化就是相位发生了变化。考虑到这里的<spanclass="math inline">\(-i\omega(n-1)\)</span>是一些很小的值。更确切地说，是被“倒退”回去了一点相位。但是还记得我们在式<spanclass="math inline">\(\eqref{eq:1}\)</span>处说的吗？<spanclass="math inline">\(E_s\)</span>应该是两个电场的和，所以我们代入就得到<span class="math display">\[E_a=(e^{-i\omega(n-1)\Delta z/c}-1)E_0e^{i\omega(t-z/c)} \label{eq:2}\tag{2}\]</span>十分激动人心的结果！因为这个式子里面只有一个量，也就是介质的折射率<spanclass="math inline">\(n\)</span>，是非基本量，如果我们能再推导出一个<spanclass="math inline">\(E_a\)</span>的关系，我们就可以计算出<spanclass="math inline">\(n\)</span>了，而且是由基本量决定的，也就找到了折射率的根源！！！</p><p>现在让我们试试，经过一点思考，会发现去描述玻璃平板电荷会很有帮助，因为它可以看作是一个振子，其运动就可以用这样的一个微分方程描述<span class="math display">\[\begin{aligned}    m\ddot x&amp;=-kx+\underbrace{qE_0\cos(\omega_lt)}_{E_s产生的电场力} \\    \ddot x&amp;=-\frac{k}{m}x+\frac{qE_0}{m}\cos(\omega_l t)\end{aligned}\]</span> 在没有外驱动力的时候，对于一个振子<spanclass="math inline">\(k/m\)</span>一般就是它振动的角频率的平方。但是在有外驱动力时，这里也就是电场<spanclass="math inline">\(E_s\)</span>产生的周期性电场力，振子的振动频率应与驱动力的频率相同，所以<spanclass="math inline">\(k/m\)</span>对应的角频率是一个与振子本身性质有关的量，与无关，我们称为其<strong>固有角频率</strong>，这里记为<spanclass="math inline">\(\omega_r\)</span>，继续对以上微分方程求解 <spanclass="math display">\[\ddot x=-\omega_r^2x+\frac{qE_0}{m}\cos(\omega_l t) \\\]</span> 可以简单地猜测其解会有这样的形式<spanclass="math inline">\(x(t)=A\cos(\omega_l t)\)</span>，<spanclass="math inline">\(\omega_l\)</span>是光源的角频率，代回去得到 <spanclass="math display">\[\begin{align}    -A\omega_l^2\cos(\omega_lt) &amp;= -A\omega_r^2\cos(\omega_lt)+\frac{qE_0}{m}\cos(\omega_lt) \\    -A\omega_l^2 &amp;= -A\omega_r^2 +\frac{qE_0}{m} \\    A&amp;=\frac{qE_0}{m(\omega_r^2-\omega_l^2)}\end{align}\]</span> 所以解出来 <span class="math display">\[x(t)=\frac{qE_0}{m(\omega_r^2-\omega_l^2)}\cos(\omega_lt)\]</span> 还是一样，写成复数形式 <span class="math display">\[x(t)=\frac{qE_0}{m(\omega_r^2-\omega_l^2)}e^{i\omega t}\]</span> 这是在玻璃平板时的，在<spanclass="math inline">\(P\)</span>点的就写成 <span class="math display">\[x(t)=\frac{qE_0}{m(\omega_r^2-\omega_l^2)}e^{i\omega(t-z/c)}\]</span> 将带有一个<spanclass="math inline">\(z/c\)</span>的时间延迟，有了振幅之后我们就可以近似地写出<spanclass="math inline">\(P\)</span>点处的玻璃平板产生的电场（只在距离玻璃平板较大时成立）<span class="math display">\[E_a=-\frac{\eta q}{2\epsilon_0c}\biggl[ i\omega_l\frac{qE_0}{m(\omega_r^2-\omega_l^2)}e^{i\omega_l(t-z/c)} \biggr]\label{eq:3} \tag{3}\]</span> 其中<spanclass="math inline">\(\eta\)</span>是板中单位面积的电荷数，<spanclass="math inline">\(\epsilon_0\)</span>是真空介电常数，<spanclass="math inline">\(c\)</span>是光速，这个式子事实上是 <spanclass="math display">\[E_a=-\frac{\eta q}{2\epsilon_0c}\biggl[ P点电荷的速度\biggr]\]</span>这个式子看起来相当复杂，其实很简单，限于篇幅限制，我们以后找机会再详讲。</p><p>现在已经拿到我们期盼已久的式子，利用式<spanclass="math inline">\(\eqref{eq:2}\)</span>和<spanclass="math inline">\(\eqref{eq:3}\)</span>，可以解出折射率<spanclass="math inline">\(n\)</span> <span class="math display">\[n=1-\frac{c}{i\omega_l\Delta z}\ln \biggl[ 1- \frac{\etaq}{2\epsilon_0c}(i\omega \frac{q}{m(\omega_r^2-\omega_l^2)}) \biggr]\]</span> 哈，看起来有点乱不是吗，作为一个近似，<spanclass="math inline">\(\ln x\approx x-1\)</span>，上式就可以写成 <spanclass="math display">\[n=1+\frac{\eta q^2}{2\Delta z\epsilon_0m(w_r^2-\omega_l^2)}\]</span> 进一步，用<span class="math inline">\(N\Deltaz\)</span>代替<span class="math inline">\(\eta\)</span>，<spanclass="math inline">\(N\)</span>是单位体积内的电荷数，剩下的就是很简洁的形式<span class="math display">\[n=1+\frac{N q^2}{2\epsilon_0m(w_r^2-\omega_l^2)}\]</span> 现在，这就是我们能得到的<strong>折射率的根源</strong>。</p><p>现在尝试用这个来理解我们之前的问题，色散是怎么产生的？可以看到，这个等式中只有一个量<spanclass="math inline">\(\omega_l\)</span>与光有关。而<spanclass="math inline">\(w_r^2-\omega_l^2\)</span>位于分母处，而<spanclass="math inline">\(\omega_r\)</span>是介质的固有角频率，一般来讲是相当大的，大于<spanclass="math inline">\(\omega_l\)</span>，那么就可以理解了。<spanclass="math inline">\(\omega=2\pi f\)</span>，<spanclass="math inline">\(f\)</span>是光源频率，所以角频率与频率成正比，那么频率越高，分母越接近0，折射率就越大，正如我们所观察到的一样！</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>物理</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>狭义相对论-尺度收缩 Special Relativity - Length contraction</title>
     <link href="/2023/05/21/%E7%8B%AD%E4%B9%89%E7%9B%B8%E5%AF%B9%E8%AE%BA-%E5%B0%BA%E5%BA%A6%E6%94%B6%E7%BC%A9%20Special%20Relativity%20-%20Length%20contraction/"/>
     <url>/2023/05/21/%E7%8B%AD%E4%B9%89%E7%9B%B8%E5%AF%B9%E8%AE%BA-%E5%B0%BA%E5%BA%A6%E6%94%B6%E7%BC%A9%20Special%20Relativity%20-%20Length%20contraction/</url>
@@ -20,9 +39,9 @@
     
     <tags>
       
-      <tag>狭义相对论</tag>
-      
       <tag>物理</tag>
+      
+      <tag>狭义相对论</tag>
       
     </tags>
     
@@ -74,9 +93,9 @@
     
     <tags>
       
-      <tag>狭义相对论</tag>
-      
       <tag>物理</tag>
+      
+      <tag>狭义相对论</tag>
       
     </tags>
     
