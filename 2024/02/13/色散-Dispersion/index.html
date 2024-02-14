@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://wrg1t.github.io/img/Dispersion/thumbnail.jpg">
 <meta property="article:published_time" content="2024-02-13T09:55:03.000Z">
-<meta property="article:modified_time" content="2024-02-14T12:40:28.261Z">
+<meta property="article:modified_time" content="2024-02-14T13:09:06.136Z">
 <meta property="article:author" content="Wrg1t">
 <meta property="article:tag" content="物理">
 <meta property="article:tag" content="光学">
@@ -236,7 +236,7 @@
         <i class="iconfont icon-chart"></i>
         
           <!-- compatible with older versions-->
-          4.1k 字
+          4k 字
         
       </span>
     
@@ -378,7 +378,7 @@ class="math inline">\(E_s\)</span>，即光源本身产生的场。但有了玻�
 class="math inline">\(P\)</span>点处的电场就会有些不同。因为玻璃平板中也同样有电荷，光源产生的电场同样也可作用于这些电荷，而这些电荷产生的运动又会反过来产生一个电场，这里记为<span
 class="math inline">\(E_a\)</span>。那么<span
 class="math inline">\(P\)</span>点处的电场 <span class="math display">\[
-E=E_s+E_a \label{equation1} \tag{1}
+E=E_s+E_a \tag{1}
 \]</span> 正如前面所说的，是多个电场的叠加作用。</p>
 <p>假设<span class="math inline">\(P\)</span>点到光源<span
 class="math inline">\(S\)</span>的距离是<span
@@ -407,11 +407,10 @@ E=e^{-i\omega(n-1)\Delta z/c}E_0e^{i\omega(t-z/c)}
 \]</span>
 所以电磁波源的电场经过玻璃板后的一个变化就是相位发生了变化。考虑到这里的<span
 class="math inline">\(-i\omega(n-1)\)</span>是一些很小的值。更确切地说，是被“倒退”回去了一点相位。但是还记得我们在式<span
-class="math inline">\(\eqref{equation1}\)</span>处说的吗？<span
+class="math inline">\((1)\)</span>处说的吗？<span
 class="math inline">\(E_s\)</span>应该是两个电场的和，所以我们代入就得到
 <span class="math display">\[
-E_a=(e^{-i\omega(n-1)\Delta z/c}-1)E_0e^{i\omega(t-z/c)}
-\label{equation2} \tag{2}
+E_a=(e^{-i\omega(n-1)\Delta z/c}-1)E_0e^{i\omega(t-z/c)} \tag{2}
 \]</span>
 十分激动人心的结果！因为这个式子里面只有一个量，也就是介质的折射率<span
 class="math inline">\(n\)</span>，是非基本量，如果我们能再推导出一个<span
@@ -454,7 +453,7 @@ class="math inline">\(P\)</span>点处的玻璃平板产生的电场（只在距
 <span class="math display">\[
 E_a=-\frac{\eta q}{2\epsilon_0c}\biggl[ i\omega_l
 \frac{qE_0}{m(\omega_r^2-\omega_l^2)}e^{i\omega_l(t-z/c)} \biggr]
-\label{equation3} \tag{3}
+\tag{3}
 \]</span> 其中<span
 class="math inline">\(\eta\)</span>是板中单位面积的电荷数，<span
 class="math inline">\(\epsilon_0\)</span>是真空介电常数，<span
@@ -464,8 +463,8 @@ E_a=-\frac{\eta q}{2\epsilon_0c}\biggl[ P点电荷的速度\biggr]
 \]</span>
 这个式子看起来相当复杂，其实很简单，限于篇幅限制，我们以后找机会再详讲。</p>
 <p>现在已经拿到我们期盼已久的式子，利用式<span
-class="math inline">\(\eqref{equation2}\)</span>和<span
-class="math inline">\(\eqref{equation3}\)</span>，可以解出折射率<span
+class="math inline">\((2)\)</span>和<span
+class="math inline">\((3)\)</span>，可以解出折射率<span
 class="math inline">\(n\)</span> <span class="math display">\[
 n=1-\frac{c}{i\omega_l\Delta z}\ln \biggl[ 1- \frac{\eta
 q}{2\epsilon_0c}(i\omega \frac{q}{m(\omega_r^2-\omega_l^2)}) \biggr]
